@@ -1,0 +1,16 @@
+{
+    "contents" : "\n#include <Rcpp.h>\nusing namespace Rcpp;\n\n// [[Rcpp::export]]\nList rcpp_hello_world() {\n\n    CharacterVector x = CharacterVector::create( \"foo\", \"bar\" )  ;\n    NumericVector y   = NumericVector::create( 0.0, 1.0 ) ;\n    List z            = List::create( x, y ) ;\n\n    return z ;\n}\n",
+    "created" : 1408021468603.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1102948069",
+    "id" : "1DBF9B77",
+    "lastKnownWriteTime" : 1408021444,
+    "path" : "~/personal_config_bin_files/workspace/rcpphi/src/rcpp_hello_world.cpp",
+    "project_path" : "src/rcpp_hello_world.cpp",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "cpp"
+}
