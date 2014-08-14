@@ -6,13 +6,15 @@
 using namespace Rcpp;
 
 // rcpp_hello_world
-List rcpp_hello_world();
-RcppExport SEXP rcpphi_rcpp_hello_world() {
+List rcpp_hello_world(std::string a, std::string b);
+RcppExport SEXP rcpphi_rcpp_hello_world(SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     SEXP __sexp_result;
     {
         Rcpp::RNGScope __rngScope;
-        List __result = rcpp_hello_world();
+        Rcpp::traits::input_parameter< std::string >::type a(aSEXP );
+        Rcpp::traits::input_parameter< std::string >::type b(bSEXP );
+        List __result = rcpp_hello_world(a, b);
         PROTECT(__sexp_result = Rcpp::wrap(__result));
     }
     UNPROTECT(1);

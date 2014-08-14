@@ -1,12 +1,12 @@
 {
-    "contents" : "\n#include <Rcpp.h>\nusing namespace Rcpp;\n\n//' Example function of rcpp\n//'\n//' @param string input filepath\n//' @param integer the target column number\n//' @param integer skip the first N lines\n//' @param integer maximum number of lines to read\n//' @return vector a vector of strings containing the target column\n//' @export\n//' @examples\n//' readcol(system.file(\"example/test.assoc.linear\", package=\"txtutils\"), 2, 1, 15)\n// [[Rcpp::export]]\nList rcpp_hello_world(std::string a, std::string b) {\n\n    CharacterVector x = CharacterVector::create(a, b)  ;\n    NumericVector y   = NumericVector::create( 0.0, 1.0 ) ;\n    List z            = List::create( x, y ) ;\n\n    return z ;\n}\n",
+    "contents" : "\n#include <Rcpp.h>\nusing namespace Rcpp;\n\n//' Example function of rcpp\n//'\n//' @param string first string\n//' @param string second string\n//' @return list list of two vectors\n//' @export\n// [[Rcpp::export]]\nList rcpp_hello_world(std::string a, std::string b) {\n\n    CharacterVector x = CharacterVector::create(a, b)  ;\n    NumericVector y   = NumericVector::create( 0.0, 1.0 ) ;\n    List z            = List::create( x, y ) ;\n\n    return z ;\n}\n",
     "created" : 1408021468603.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1122552024",
+    "hash" : "3328869298",
     "id" : "1DBF9B77",
-    "lastKnownWriteTime" : 1408021720,
+    "lastKnownWriteTime" : 1408021770,
     "path" : "~/personal_config_bin_files/workspace/rcpphi/src/rcpp_hello_world.cpp",
     "project_path" : "src/rcpp_hello_world.cpp",
     "properties" : {
